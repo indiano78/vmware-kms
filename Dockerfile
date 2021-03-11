@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     
 RUN pip3 install pykmip \
     && mkdir /etc/pykmip \
-    && mkdir /etc/pykmip/policies
+    && mkdir /etc/pykmip/policies\
     && mkdir /etc/pykmip/certs
 
 COPY server.conf /etc/pykmip
