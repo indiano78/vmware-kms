@@ -5,9 +5,10 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libssl-dev \
     libsqlite3-dev \
+    python3-pip\
     && rm -rf /var/lib/apt/lists/*
-
-RUN mkdir /etc/pykmip
+    
+RUN pip3 install pykmip && mkdir /etc/pykmip
 
 COPY server.conf /etc/pykmip
 
