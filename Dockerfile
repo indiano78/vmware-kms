@@ -1,9 +1,9 @@
 FROM ubuntu:18.04
-COPY server.conf /etc/pykmip/
+COPY . /tmp/
 RUN apt-get update && apt-get install -y \
     python3-pip \
     && rm -rf /var/lib/apt/lists/* \
-    && pip3 install pykmip
-
+    && pip3 install pykmip\
+    
 
 
