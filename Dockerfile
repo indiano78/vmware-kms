@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-COPY server.conf /etc/pykmip
+COPY server.conf /etc/pykmip/
 RUN apt-get update && apt-get install -y \
     python3-pip \
     && rm -rf /var/lib/apt/lists/* \
