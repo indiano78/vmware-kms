@@ -6,4 +6,3 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/* \
     && pip3 install pykmip
 
-CMD sh /tmp/pykmipep.sh
