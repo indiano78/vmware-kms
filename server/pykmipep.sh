@@ -32,3 +32,5 @@ if [ ! -d /pykmip/certs ];then
         -nodes \
         -subj "/C=FR/ST=Ile de France/L=Paris/O=OpenKMS/OU=PyKMS/CN=$(hostname)"
 fi
+
+pykmip-server
