@@ -5,3 +5,6 @@ the principal difference, is on persistent storage, and availability to backup k
 
 it must be not used on production environments, due to lack of security, but ideal for labs or pre-prod infrastrucutres.
 
+how to use it :
+
+docker run -it --name vmware-kms -p 5696:5696 -v <localpath>:/pykmip indiano78/vmware-kms:latest
